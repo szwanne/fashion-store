@@ -78,7 +78,7 @@ body {
 nav {
   display: flex;
   max-width: 100%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   justify-content: space-between;
   align-items: center;
   margin: 0px 50px;
@@ -92,7 +92,7 @@ nav {
 nav > .left-links > ul {
   display: flex;
   gap: 10px;
-  background-color: bisque;
+  /* background-color: bisque; */
   min-width: 280px;
   justify-content: space-evenly;
 }
@@ -101,6 +101,7 @@ nav > .left-links > ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -110,7 +111,7 @@ li {
 .right-links > ul {
   display: flex;
   gap: 20px;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   min-width: 300px;
   justify-content: space-evenly;
 }
@@ -143,5 +144,59 @@ li {
   padding: 10px;
 
   /* Example: Change color and font size */
+  font-size: 15px;
+  color: black;
+}
+
+/*BOTTOM SECTION */
+
+.bottom-container {
+  margin-top: 150px;
+  margin-left: 50px;
+  display: flex;
+  gap: 15px;
+  max-height: auto;
+  gap: 100px;
+  overflow: none;
+}
+
+.item-1 {
+  /* background-color: lightgreen; */
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: space-between;
+}
+
+.item-1 h1 {
+  max-width: 300px;
+}
+
+.bottom-field {
+  display: flex;
+  gap: 15px;
+  /* background-color: aqua; */
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 160px;
+}
+
+.arrow-icon {
+  padding-left: 25px;
+  background: url("/Images/icons8-right-arrow-100.png") no-repeat center;
+  background-size: 60px;
+  background-position: 360px;
+}
+
+.bottom-field input {
+  height: 40px;
+  width: 450px;
+  background-color: lightgrey;
+  border: none;
+}
+
+.bottom-field input::placeholder {
+  color: black;
   font-size: 15px;
 }
