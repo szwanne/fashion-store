@@ -7,7 +7,7 @@ body {
   font-family: "Beatrice", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden; /*Prevent horizontal scroll bar from max-width from 100vw */
-  color: white;
+  color: rgb(7, 7, 7);
   font-size: 20px;
 }
 
@@ -34,3 +34,18 @@ body {
 }
 
 /* NAVBAR SECTION */
+
+.hamburger-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger-line1,
+.hamburger-line2,
+.hamburger-line3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
