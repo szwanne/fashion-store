@@ -57,9 +57,10 @@ body {
   height: 0;
   border: 25px solid transparent;
   border-bottom-color: yellow;
+  right: 25px;
   position: relative;
-  top: -25px;
-  transform: rotate(45deg);
+  top: 0px;
+  transform: rotate(90deg);
 }
 
 #diamond:after {
@@ -71,4 +72,44 @@ body {
   height: 0;
   border: 25px solid transparent;
   border-top-color: red;
+}
+
+nav {
+  display: flex;
+  max-width: 100%;
+  background-color: aquamarine;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+}
+
+.left-links {
+  display: flex;
+  gap: 100px;
+}
+
+nav > .left-links > ul {
+  display: flex;
+  gap: 15px;
+  background-color: bisque;
+  min-width: 300px;
+  justify-content: space-evenly;
+}
+
+/* Anchor links */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.right-links > ul {
+  display: flex;
+  gap: 20px;
+  background-color: lightcoral;
+  min-width: 300px;
+  justify-content: space-evenly;
 }
