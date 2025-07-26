@@ -9,7 +9,7 @@ body {
   overflow-x: hidden; /*Prevent horizontal scroll bar from max-width from 100vw */
   color: rgb(7, 7, 7);
   font-size: 20px;
-  background-color: white;
+  background-color: #e7e7e7;
 }
 
 *,
@@ -41,10 +41,24 @@ body {
   cursor: pointer;
 }
 
-.hamburger-line1,
-.hamburger-line2,
-.hamburger-line3 {
+.hamburger-line1 {
   width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger-line2 {
+  width: 25px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger-line3 {
+  width: 11px;
   height: 5px;
   background-color: #333;
   margin: 6px 0;
@@ -57,7 +71,7 @@ body {
   width: 0;
   height: 0;
   border: 25px solid transparent;
-  border-bottom-color: yellow;
+  border-bottom-color: black;
   right: 25px;
   position: relative;
   top: 0px;
@@ -72,7 +86,7 @@ body {
   width: 0;
   height: 0;
   border: 25px solid transparent;
-  border-top-color: red;
+  border-top-color: #d9d9d9;
 }
 
 nav {
@@ -81,7 +95,7 @@ nav {
   /* background-color: aquamarine; */
   justify-content: space-between;
   align-items: center;
-  margin: 0px 50px;
+  margin: 20px 50px;
 }
 
 .left-links {
@@ -95,6 +109,30 @@ nav > .left-links > ul {
   /* background-color: bisque; */
   min-width: 280px;
   justify-content: space-evenly;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.fa-bag-shopping {
+  background-color: rgb(0, 0, 0);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.sub-list {
+  display: flex;
+  align-items: baseline;
 }
 
 /* Anchor links */
@@ -114,6 +152,20 @@ li {
   /* background-color: lightcoral; */
   min-width: 300px;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+a:hover {
+  color: cadetblue;
+}
+.btn:hover,
+.fa-bag-shopping:hover {
+  background-color: cadetblue;
+}
+
+.clothes:hover {
+  transform: scale(1.2);
+  transition: 25ms ease-in-out;
 }
 
 /* TOP SECTION */
@@ -131,6 +183,8 @@ li {
   width: 400px;
   background-color: lightgrey;
   border: none;
+  padding-left: 40px;
+  font-size: 20px;
 }
 
 .top-container {
@@ -158,6 +212,7 @@ li {
   max-height: auto;
   gap: 100px;
   overflow: none;
+  max-width: 100%;
 }
 
 .item-1 {
